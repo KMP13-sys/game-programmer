@@ -29,7 +29,7 @@ ball_speed = 5
 
 # คะแนน
 score = 0
-font = pygame.font.SysFont("Arial", 30)
+font = pygame.font.SysFont("TH SarabunPSK", 30)
 
 # เกมหลัก
 clock = pygame.time.Clock()
