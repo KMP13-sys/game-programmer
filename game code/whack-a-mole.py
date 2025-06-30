@@ -44,8 +44,8 @@ while running:
     score_text = font.render(f"คะแนน: {score}", True, BLACK)
     win.blit(score_text, (10, 10))
 
-    # โหลดภาพตุ่น
-    mole_img = pygame.image.load("images/mole.png")
+    # โหลดภาพตุ่นและลบพื้นหลัง (ทำให้พื้นหลังโปร่งใส)
+    mole_img = pygame.image.load("images/mole.png").convert_alpha()
     mole_img = pygame.transform.scale(mole_img, (80, 80))
 
     # วาดตัวตุ่น (จากภาพแทนวงกลม)
